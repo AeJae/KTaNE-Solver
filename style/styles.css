@@ -54,7 +54,7 @@ footer {
   align-items: center;
   height: 250px;
   background-color: #141414;
-  background-image: url("img/maze-black.png");
+  background-image: url("../img/maze-black.png");
 }
 footer img {
   height: 25px;
