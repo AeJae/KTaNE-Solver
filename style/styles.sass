@@ -103,3 +103,33 @@ footer
     nav #mobileTitle
         display: inline-block
         width: fit-content
+
+
+
+// 404 PAGE
+#err404
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+
+    img
+        margin-top: 6vh
+        width: 5em
+        transition: filter 0.2s ease 0s
+        &:hover
+                filter: drop-shadow(0 0 5px #16adff)
+                transition: filter 0.2s ease 0s
+
+    h1
+        pointer-events: none
+        user-select: none
+        margin: 30vh 0 0 0
+        font-size: 350%
+        color: #35b8ff
+
+    p
+        pointer-events: none
+        user-select: none
+        margin: 0
+        font-size: 125%
