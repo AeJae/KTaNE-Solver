@@ -1,0 +1,95 @@
+body {
+  margin: 0;
+  background: #232323;
+  color: white;
+  font-family: "Poppins", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+#navbar-bg {
+  position: absolute;
+  width: 100%;
+  height: 80px;
+  background: black;
+}
+
+nav {
+  user-select: none;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  padding: 0 3%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  background: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(5px);
+  box-shadow: 0px 4px 20px -3px rgba(255, 255, 255, 0.2);
+  transition: background-color 0.3s;
+}
+nav img {
+  height: 60px;
+}
+nav a {
+  display: inline-block;
+  height: 60px;
+}
+nav h1 {
+  margin: 0;
+}
+nav #mobileTitle {
+  display: none;
+  width: 0;
+}
+
+footer {
+  user-select: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+  background-color: #141414;
+  background-image: url("img/maze-black.png");
+}
+footer img {
+  height: 25px;
+}
+footer p {
+  margin: 8px 10px;
+  filter: drop-shadow(0 0 5px #202020);
+  text-align: center;
+}
+footer a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+}
+footer a p {
+  margin: 8px 0;
+}
+footer a p::before {
+  display: inline-block;
+  content: " ";
+  height: 15px;
+  width: 5px;
+}
+
+@media only screen and (max-width: 750px) {
+  nav #mainTitle {
+    display: none;
+    width: 0;
+  }
+  nav #mobileTitle {
+    display: inline-block;
+    width: fit-content;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
