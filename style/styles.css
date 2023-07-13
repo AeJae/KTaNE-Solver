@@ -172,6 +172,7 @@ footer a p::before {
   transition: filter 0.2s ease 0s;
 }
 #err404 h1 {
+  text-align: center;
   pointer-events: none;
   user-select: none;
   margin: 30vh 0 0 0;
@@ -179,6 +180,7 @@ footer a p::before {
   color: #35b8ff;
 }
 #err404 p {
+  text-align: center;
   pointer-events: none;
   user-select: none;
   margin: 0;
