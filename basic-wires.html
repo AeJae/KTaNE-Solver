@@ -9,10 +9,63 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Page Specific -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="js/dropdown.js" defer></script>
 </head>
 <body>
+    <div id="navbar-bg"></div>
+    <nav>
+        <a href="/"><img src="img/logo.png"></a>
+        <h1 id="mainTitle">Keep Talking and Nobody Explodes Solver</h1>
+        <h1 id="mobileTitle">KTaNE Solver</h1>
+    </nav>
+
     <div id="placeholder">
         <img src="img/logo.png">
         <h1>Great things are coming soon.</h1>
     </div>
+
+    <!-- <div id="wipWarning"><img src="img/warning.png">Page undergoing live maintenance.</div> -->
+    
+    <div class="hide">
+        <!-- Dropdown 1 -->
+        <div id="dropdown1" class="dropdown">
+            <div class="select">
+                <span>Select Option</span>
+                <img src="img/dd-arrow.png">
+            </div>
+            <ul class="dropdown-menu">
+                <li id="opt1">Option 1</li>
+                <li id="opt2">Option 2</li>
+                <li id="opt3">Option 3</li>
+                <li id="opt4">Option 4</li>
+                <li id="opt5">Option 5</li>
+                <li id="opt6">Option 6</li>
+            </ul>
+        </div>
+        <!-- Dropdown 2 -->
+        <div id="dropdown2" class="dropdown">
+            <div class="select">
+                <span>Select Option</span>
+                <img src="img/dd-arrow.png">
+            </div>
+            <ul class="dropdown-menu">
+                <li id="opt1">Option 1</li>
+                <li id="opt2">Option 2</li>
+                <li id="opt3">Option 3</li>
+                <li id="opt4">Option 4</li>
+                <li id="opt5">Option 5</li>
+                <li id="opt6">Option 6</li>
+            </ul>
+        </div>
+        <!-- Solve Button -->
+        <button id="solver" type="submit">Solve</button>
+    </div>
+
+    <footer>
+        <p>Keep Talking and Nobody Explodes Solver</p>
+        <p>© 2023 Arun Fletcher</p>
+        <a href="https://github.com/AeJae/KTaNE-Solver"><img src="img/github-logo.svg"><p>Source Code</p></a>
+    </footer>
 </body>

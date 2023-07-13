@@ -41,6 +41,99 @@
     margin: 5vw calc(8vw + 21px) 5vw 8vw;
   }
 }
+* {
+  outline: 0;
+}
+
+span.msg, span.choose {
+  color: #555;
+  padding: 5px 0 10px;
+  display: inherit;
+}
+
+.container {
+  width: 500px;
+  margin: 50px auto 0;
+  text-align: center;
+}
+
+.dropdown {
+  width: 300px;
+  display: inline-block;
+  background-color: #fff;
+  border-radius: 2px;
+  box-shadow: 0 0 2px rgb(204, 204, 204);
+  transition: all 0.5s ease;
+  position: relative;
+  font-size: 14px;
+  color: #474747;
+  height: 100%;
+  text-align: left;
+}
+
+.dropdown .select {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.dropdown .select > img {
+  user-select: none;
+  pointer-events: none;
+  cursor: pointer;
+  width: 10px;
+}
+
+.dropdown:hover {
+  box-shadow: 0 0 4px rgb(204, 204, 204);
+}
+
+.dropdown:active {
+  background-color: #f8f8f8;
+}
+
+.dropdown.active:hover, .dropdown.active {
+  box-shadow: 0 0 4px rgb(204, 204, 204);
+  border-radius: 2px 2px 0 0;
+  background-color: #f8f8f8;
+}
+
+.dropdown .dropdown-menu {
+  position: absolute;
+  background-color: #fff;
+  width: 100%;
+  left: 0;
+  margin-top: 1px;
+  box-shadow: 0 1px 2px rgb(204, 204, 204);
+  border-radius: 0 1px 2px 2px;
+  overflow: hidden;
+  display: none;
+  max-height: 144px;
+  overflow-y: auto;
+  z-index: 9;
+}
+
+.dropdown .dropdown-menu li {
+  padding: 10px;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.dropdown .dropdown-menu {
+  padding: 0;
+  list-style: none;
+}
+
+.dropdown .dropdown-menu li:hover {
+  background-color: #f2f2f2;
+}
+
+.dropdown .dropdown-menu li:active {
+  background-color: #e2e2e2;
+}
+
 body {
   margin: 0;
   background: #232323;
@@ -50,6 +143,12 @@ body {
 
 h1 {
   text-align: center;
+}
+
+.hide {
+  display: none;
+  width: 0;
+  height: 0;
 }
 
 #placeholder {
@@ -71,6 +170,25 @@ h1 {
   padding: 1em;
   height: 4em;
   width: auto;
+}
+
+#wipWarning {
+  user-select: none;
+  pointer-events: none;
+  padding: 5px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #ffbb00;
+  color: black;
+  box-shadow: 0 4px 20px -2px rgba(255, 187, 0, 0.6666666667);
+  margin: 0 0 5vh 0;
+}
+#wipWarning img {
+  margin: 0 10px 0 0;
+  filter: drop-shadow(0 0 5px #000000);
+  width: 20px;
 }
 
 #navbar-bg {
