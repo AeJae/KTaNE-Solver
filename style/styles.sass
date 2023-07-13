@@ -1,9 +1,7 @@
-// VARIABLES
-$nav-height: 75px
-$logo-height: 55px
-$footer-height: 250px
-$footer-logo-height: 25px
-$footer-text-spacing: 8px
+// CONTROLS UNIVERSAL STYLING
+// USES
+@import "variables"
+@import "index-styles"
 
 
 
@@ -36,10 +34,12 @@ nav
     align-items: center
     justify-content: space-between
     height: $nav-height
-    background: rgba(0, 0, 0, 0.75)
-    backdrop-filter: blur(5px)
-    box-shadow: 0px 4px 20px -3px (rgba(255, 255, 255, 0.2))
-    transition: background-color 0.3s
+    background: rgba(0, 0, 0, 0.7)
+    backdrop-filter: blur(7px)
+    // !! TESTING NEEDED !! -> SEE WHICH IS PREFERRED:
+    box-shadow: 0 4px 20px -2px (rgba(138, 202, 255, 0.4))
+    box-shadow: 0 4px 20px -3px (rgba(255, 255, 255, 0.2))
+    transition: box-shadow 0.3s
 
     img
         height: $logo-height
@@ -67,7 +67,6 @@ footer
     height: $footer-height
     background-color: #141414
     background-image: url("../img/maze-black.png")
-
 
     img
         height: $footer-logo-height
