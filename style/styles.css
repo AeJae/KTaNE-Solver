@@ -97,6 +97,46 @@
   transform: translateY(-5px);
 }
 
+#solvedOverlay {
+  position: fixed;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.65);
+  backdrop-filter: blur(7px);
+  top: 75px;
+  left: 0;
+  width: 100%;
+  height: calc(100vh - 75px);
+}
+
+#solvedMessage {
+  user-select: none;
+  font-size: 150%;
+  text-align: center;
+  margin: 0 25px;
+  background-color: black;
+  border-radius: 10px;
+  padding: 25px 50px;
+  box-shadow: 0 0 20px 8px red;
+}
+
+#solvedOkayButton {
+  cursor: pointer;
+  user-select: none;
+  margin: 10vh 0 0 0;
+  padding: 10px 50px;
+  border: 2px solid red;
+  border-radius: 30px;
+  font-size: 120%;
+  background-color: black;
+  color: white;
+  box-shadow: 0 0 20px 5px crimson;
+}
+
 span.msg, span.choose {
   color: #555;
   padding: 5px 0 10px;

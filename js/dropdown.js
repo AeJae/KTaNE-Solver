@@ -26,6 +26,9 @@ const children5 = document.getElementById("numYellowWiresDropdown").querySelecto
 const children6 = document.getElementById("numBlackWiresDropdown").querySelector("ul").children;
 const children7 = document.getElementById("numWhiteWiresDropdown").querySelector("ul").children;
 const children8 = document.getElementById("lastWireDropdown").querySelector("ul").children;
+const outputContainer = document.getElementById("solvedOverlay");
+const okay = document.getElementById("solvedOkayButton");
+const output = document.getElementById("solvedMessage");
 const submit = document.getElementById("solver");
 
 
@@ -68,75 +71,84 @@ function solveManager() {
     switch (numWires) {
         case "3":
             if (redWires === "0") {
-                alert("Cut the second wire.");
+                showMessage("Cut the second wire.");
                 return;
             }
             if (lastWire === "White") {
-                alert("Cut the last wire.");
+                showMessage("Cut the last wire.");
                 return;
             }
             if (blueWires === "2+") {
-                alert("Cut the last blue wire.");
+                showMessage("Cut the last blue wire.");
                 return;
             } else {
-                alert("Cut the last wire.");
+                showMessage("Cut the last wire.");
             }
             break;
         case "4":
             if (redWires === "2+" && serialNum === "Odd") {
-                alert("Cut the last red wire.");
+                showMessage("Cut the last red wire.");
                 return;
             }
             if (lastWire === "Yellow" && redWires === "0") {
-                alert("Cut the first wire.");
+                showMessage("Cut the first wire.");
                 return;
             }
             if (blueWires === "1") {
-                alert("Cut the first wire.");
+                showMessage("Cut the first wire.");
                 return;
             }
             if (yellowWires === "2+") {
-                alert("Cut the last wire.");
+                showMessage("Cut the last wire.");
                 return;
             } else {
-                alert("Cut the second wire.");
+                showMessage("Cut the second wire.");
             }
             break;
         case "5":
             if (lastWire === "Black" && serialNum === "Odd") {
-                alert("Cut the fourth wire.");
+                showMessage("Cut the fourth wire.");
                 return;
             }
             if (redWires === "1" && yellowWires === "2+") {
-                alert("Cut the first wire.");
+                showMessage("Cut the first wire.");
                 return;
             }
             if (blackWires === "0") {
-                alert("Cut the second wire.");
+                showMessage("Cut the second wire.");
                 return;
             } else {
-                alert("Cut the first wire.");
+                showMessage("Cut the first wire.");
             }
             break;
         case "6":
             if (yellowWires === "0" && serialNum === "Odd") {
-                alert("Cut the third wire.");
+                showMessage("Cut the third wire.");
                 return;
             }
             if (yellowWires === "1" && whiteWires === "2+") {
-                alert("Cut the fourth wire.");
+                showMessage("Cut the fourth wire.");
                 return;
             }
             if (redWires === "0") {
-                alert("Cut the last wire.");
+                showMessage("Cut the last wire.");
                 return;
             } else {
-                alert("Cut the fourth wire.");
+                showMessage("Cut the fourth wire.");
             }
             break;
         default:
             console.error("Error in solve switch. Invalid value:", numWires)
     }
+}
+
+function showMessage(text) {
+    output.innerHTML = text;
+    outputContainer.style.display = "flex";
+}
+
+function hideMessage() {
+    outputContainer.style.display = "";
 }
 
 
@@ -196,4 +208,8 @@ submit.addEventListener("click", () => {
     } else {
         alert("Please fill in all fields.")
     }
+});
+
+okay.addEventListener("click", () => {
+    hideMessage();
 });
