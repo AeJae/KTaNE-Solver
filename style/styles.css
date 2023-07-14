@@ -47,23 +47,16 @@
     margin: 5vw calc(8vw + 21px) 5vw 8vw;
   }
 }
-#basicWiresGrid {
+* {
+  outline: 0;
+}
+
+.inputGrid {
   box-sizing: border-box;
   margin: 4vh 3vw 3vh 3vw;
   display: grid;
   grid-template-columns: 40% 40%;
   justify-content: center;
-}
-
-@media only screen and (max-width: 950px) {
-  #basicWiresGrid {
-    grid-template-columns: 100%;
-    gap: 0;
-    margin: 0;
-  }
-}
-* {
-  outline: 0;
 }
 
 .inputContainer {
@@ -202,6 +195,11 @@ span.msg, span.choose {
   }
 }
 @media only screen and (max-width: 950px) {
+  .inputGrid {
+    grid-template-columns: 100%;
+    gap: 0;
+    margin: 0;
+  }
   .inputContainer {
     margin: 0;
   }
