@@ -75,12 +75,15 @@
     user-select: none
     margin:10vh 0 0 0
     padding: 10px 29px
-    border: 2px solid red
+    border: 2px solid black
     border-radius: 30px
     font-size: 120%
-    background-color: black
-    color: white
-    box-shadow: 0 0 20px 5px crimson
+    background-color: white
+    transition: box-shadow 0.2s ease 0s
+
+    &:hover
+        box-shadow: 0 0 20px 3px white
+        transition: box-shadow 0.2s ease 0s
 
 span.msg, span.choose
     color: #555
