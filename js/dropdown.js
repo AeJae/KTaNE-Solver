@@ -32,7 +32,7 @@ const submit = document.getElementById("solver");
 
 // FUNCTIONS
 // Updates variables based on dropdowns
-function updated(dropdown, value) {
+function update(dropdown, value) {
     switch (dropdown) {
         case 1:
             numWires = value
@@ -148,49 +148,49 @@ function solveManager() {
 // SETUP
 for (let i = 0; i < children1.length; i++) {
     children1[i].addEventListener("click", () => {
-        updated(1, children1[i].innerHTML)
+        update(1, children1[i].innerHTML)
     })
 }
 
 for (let i = 0; i < children2.length; i++) {
     children2[i].addEventListener("click", () => {
-        updated(2, children2[i].innerHTML)
+        update(2, children2[i].innerHTML)
     })
 }
 
 for (let i = 0; i < children3.length; i++) {
     children3[i].addEventListener("click", () => {
-        updated(3, children3[i].innerHTML)
+        update(3, children3[i].innerHTML)
     })
 }
 
 for (let i = 0; i < children4.length; i++) {
     children4[i].addEventListener("click", () => {
-        updated(4, children4[i].innerHTML)
+        update(4, children4[i].innerHTML)
     })
 }
 
 for (let i = 0; i < children5.length; i++) {
     children5[i].addEventListener("click", () => {
-        updated(5, children5[i].innerHTML)
+        update(5, children5[i].innerHTML)
     })
 }
 
 for (let i = 0; i < children6.length; i++) {
     children6[i].addEventListener("click", () => {
-        updated(6, children6[i].innerHTML)
+        update(6, children6[i].innerHTML)
     })
 }
 
 for (let i = 0; i < children7.length; i++) {
     children7[i].addEventListener("click", () => {
-        updated(7, children7[i].innerHTML)
+        update(7, children7[i].innerHTML)
     })
 }
 
 for (let i = 0; i < children8.length; i++) {
     children8[i].addEventListener("click", () => {
-        updated(8, children8[i].innerHTML)
+        update(8, children8[i].innerHTML)
     })
 }
 
