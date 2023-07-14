@@ -28,7 +28,13 @@
   border-radius: 15px;
 }
 .gridItem a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   color: #8acaff;
+  width: 100%;
+  height: 100%;
 }
 
 .lastItemOdd {
