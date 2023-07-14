@@ -41,6 +41,21 @@
     margin: 5vw calc(8vw + 21px) 5vw 8vw;
   }
 }
+#basicWiresGrid {
+  box-sizing: border-box;
+  margin: 4vh 7vh 3vh 7vh;
+  display: grid;
+  grid-template-columns: 40% 40%;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 950px) {
+  #basicWiresGrid {
+    grid-template-columns: 100%;
+    gap: 0;
+    margin: 0;
+  }
+}
 * {
   outline: 0;
 }
@@ -64,8 +79,8 @@
 
 #solver {
   display: block;
-  margin: 35px 0 6vh 0;
-  padding: 10px 30px 10px 30px;
+  margin: 35px 0 8vh 0;
+  padding: 10px 50px;
   border: 1px solid #16adff;
   border-radius: 30px;
   font-size: 120%;
@@ -180,6 +195,15 @@ span.msg, span.choose {
     transform: translateY(0);
   }
 }
+@media only screen and (max-width: 950px) {
+  .inputContainer {
+    margin: 0;
+  }
+  #solver {
+    margin: 35px 0;
+    padding: 10px 30px;
+  }
+}
 body {
   margin: 0;
   background: #232323;
@@ -195,6 +219,12 @@ h1 {
   display: none;
   width: 0;
   height: 0;
+}
+
+.centreFlex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #placeholder {
