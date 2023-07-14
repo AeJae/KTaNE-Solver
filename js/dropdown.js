@@ -67,7 +67,6 @@ function update(dropdown, value) {
 function solveManager() {
     switch (numWires) {
         case "3":
-            alert("3 Wire Solving")
             if (redWires === "0") {
                 alert("Cut the second wire.");
                 return;
@@ -84,7 +83,6 @@ function solveManager() {
             }
             break;
         case "4":
-            alert("4 Wire Solving")
             if (redWires === "2+" && serialNum === "Odd") {
                 alert("Cut the last red wire.");
                 return;
@@ -105,7 +103,6 @@ function solveManager() {
             }
             break;
         case "5":
-            alert("5 Wire Solving")
             if (lastWire === "Black" && serialNum === "Odd") {
                 alert("Cut the fourth wire.");
                 return;
@@ -122,7 +119,6 @@ function solveManager() {
             }
             break;
         case "6":
-            alert("6 Wire Solving");
             if (yellowWires === "0" && serialNum === "Odd") {
                 alert("Cut the third wire.");
                 return;
