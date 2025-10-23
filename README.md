@@ -1,7 +1,7 @@
 # KTaNE-Solver
-Keep Talking and Nobody Explodes Assistant
+A site to assist with the game *Keep Talking and Nobody Explodes*.
 
-Initially started with the goal of creating a fully fledged assistant, however university work ended up taking over. More will be added over time to both this and my main site.
+This began with the goal of creating a fully fledged assistant, but university work ended up taking over and I no longer play the game. I'm not updating this project anymore, but the wires solver is fully complete.
 
 <br>
 
